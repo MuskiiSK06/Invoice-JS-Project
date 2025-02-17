@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>RECEIPT</h1>
+  <div class="container">
+        <form id="receiptForm">
+          <label>Invoice Number: <input type="text" id="invoice" placeholder="100"></label>
+          <label>Customer Name: <input type="text" id="customer" placeholder="Mark Otto"></label>
+          <label>Shipment: <input type="text" id="shipment" placeholder="Mumbai City"></label>
+          <label>Price: <input type="text" id="price" placeholder="$2000"></label>
+          <label>Purchased Price: <input type="text" id="purchasedPrice" placeholder="$1000"></label>
+          <label>Status: 
+            <select id="status">
+              <option>Select One</option>
+              <option>Progress</option>
+              <option>Open</option>
+              <option>On Hold</option>
+            </select>
+          </label>
+          <button type="button" id="entryButton">ENTRY</button>
+          <button type="reset" id="resetButton">RESET</button>
+        </form>
+        <table id="dataTable" border="1">
+          <thead>
+            <tr>
+              <th>INVOICE</th>
+              <th>CUSTOMER</th>
+              <th>SHIPMENT</th>
+              <th>PRICE</th>
+              <th>PURCHASED PRICE</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+      <script src="script.js"></script>
+    <title>Document</title>
+</body>
+</html>
